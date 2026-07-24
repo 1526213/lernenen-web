@@ -1,17 +1,148 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тестовый сайт</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>CV Pages</title>
 </head>
 <body>
 
+<header class="header">
+    <img src="images/avatar-lernen-web.jpg" alt="my photo" class="avatar">
+    <h1 class="header__title">Ivan Krivko | CV</h1>
+    <h2 class="header__subtitle">Frontend Developer</h2>
+</header>
+
+<main>
+    <section class="skills">
+        <h3>Skills</h3>
+
+        <details>
+            <summary>Skills list</summary>
+
+            <ol>
+                <li>1. HTML</li>
+                <li>2. CSS</li>
+                <li>3. GIT</li>
+                <li>4. JavaScript</li>
+                <li>5. TypeScript</li>
+            </ol>
+        </details>
+    </section>
+
+    <article class="article">
+        <h4> Short article about me</h4>
+
+        <p>
+            Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты. Что живет, выйти которое однажды lorem пустился. О скатился рукопись от всех переписывается приставка сбить предложения меня путь решила строчка! Языкового над агентство правилами переулка океана города однажды, жаренные единственное то вскоре ipsum повстречался одна lorem великий большой рот текстами диких!
+        </p>
+    </article>
+
+    <section class="gallery">
+        <h3 class="gallery"> Gallery </h3>
+        <img src="https://placehold.co/250x250" alt="placehold image">
+        <img src="https://placehold.co/250x250" alt="placehold image">
+        <img src="https://placehold.co/250x250" alt="placehold image">
+    </section>
+
+    <hr class="separator">
+
+    <section>
+        
+    <iframe class="video"
+        src="https://rutube.ru/play/embed/c3d76dbe3f1ec95d208d0da5a32ea00b"
+        style="border: none;"
+        allow="clipboard-write; autoplay"
+        allowFullScreen
+    ></iframe>
+    </section>
+
+    <section class="hobbies">
+        <h4> My hobbies </h4>
+
+        <details>
+            <summary>Hobbies</summary>
+
+            <ol>
+                <li>1. Skiing</li>
+                <li>2. Video editing</li>
+                <li>3. Audio books</li>
+            </ol>
+        </details>
+    </section>
+
+    <hr class="separator">
+
+    <section class="ed">
+        <table class="ed__table">
+            <thead>
+                <tr>
+                    <th>School / University</th>
+                    <th>Profession</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>IT school 1</td>
+                    <td>Angular Dev</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td>IT school 2</td>
+                    <td>React Dev</td>
+                    <td>2020</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="quote">
+        <blockquote>
+            Действия - это единственный путь к успеху
+        </blockquote>
+    </section>
+
+    <section class="interaction">
+        <form action="https://ya.ru" method="get" class="form" target="_blank">
+
+            <fieldset>
+                <legend>Required fields: </legend>
 
 
+                <label for="firstName-id">FirstName: </label>
+                <input type="text" name="firstName" id="firstName-id" required class="form__control" placeholder="first name">
 
+                <label for="LastName-id">LastName: </label>
+                <input type="text" name="LastName" id="LastName-id" required class="form__control" placeholder="last name">
 
+                <label for="email-id">Email: </label>
+                <input type="email" name="email" id="email-id" required class="form__control" placeholder="email">
+            </fieldset>
 
+            <br>
+
+            <textarea name="questions" cols="30" rows="7" class="form__control control--text" placeholder="your questions"></textarea>
+            
+            
+
+            <button type="submit" class="form__submit">Submit</button>
+
+        </form>
+    </section>
+</main>
+
+<hr class="separator">
+
+<footer>
+    <address>
+        <a href="mailto:it@mail.ru" class="contacts__link">it@mail.ru</a>
+        <br><br>
+        <a href="tel:+99999999999991" class="contacts__link">+99999999999991</a>
+    </address>
+</footer>
 
 </body>
 </html>
